@@ -54,7 +54,7 @@ const Header = () => {
                 <li key={link.path}>
                   <Link
                     href={link.path}
-                    className={`text-sm uppercase transition-colors font-medium ${
+                    className={`text-sm uppercase hover:bg-secondary/10 rounded-sm transition-colors font-medium ${
                       isActive
                         ? "text-accent"
                         : "text-secondary/60 hover:text-secondary"

@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
   return (
-    <div className="flex gap-2 items-center">
+    <Link href="/" className="flex gap-2 items-center cursor-pointer">
       <svg
         width="25"
         height="28"
@@ -48,7 +49,7 @@ const Logo = () => {
           Collective
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
