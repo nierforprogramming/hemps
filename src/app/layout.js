@@ -2,6 +2,7 @@ import { Playfair_Display, Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
+import AOSProvider from "@/providers/aos-provider";
 
 const serif = Playfair_Display({
   variable: "--font-serif",
@@ -27,9 +28,11 @@ export default function RootLayout({ children }) {
       className={`${serif.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans pt-16">
-        <Header />
-        {children}
-        <Footer />
+        <AOSProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );
