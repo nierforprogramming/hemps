@@ -43,7 +43,7 @@ const Logo = () => {
       </svg>
 
       <div className="uppercase">
-        <p className="text-secondary tracking-wider font-serif">Nepal Hemps</p>
+        <p className="text-secondary tracking-wider font-serif">Nepal Hemp</p>
         <p className="text-accent text-[12px] tracking-widest font-serif">
           Collective
         </p>

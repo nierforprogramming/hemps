@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="border-t border-secondary/10 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary/50">
           {/* COPYRIGHT */}
           <span>
-            © {new Date().getFullYear()} Nepal Hemps Collective · Raw. Pure.
+            © {new Date().getFullYear()} Nepal Hemp Collective · Raw. Pure.
             Himalayan.
           </span>
 
