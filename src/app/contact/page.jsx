@@ -1,9 +1,50 @@
+"use client";
+import { useState } from "react";
 import Input from "@/components/shared/input";
 import Select from "@/components/shared/select";
 import Textarea from "@/components/shared/textarea";
 import { contactCards } from "@/constants";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    fullName: "",
+    company: "",
+    email: "",
+    country: "",
+    inquiryType: "",
+    quantity: "",
+    useCase: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      alert("Inquiry sent successfully!");
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong");
+    }
+  };
+
   return (
     <>
       <section className="bg-primary text-secondary relative overflow-hidden">
@@ -90,7 +131,10 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="bg-secondary-dk border border-secondary-dd rounded-md p-6 lg:p-10 mb-20">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-secondary-dk border border-secondary-dd rounded-md p-6 lg:p-10 mb-20"
+          >
             <p className="text-xs tracking-[0.25em] uppercase text-accent mb-2">
               Send an Inquiry
             </p>
@@ -105,33 +149,66 @@ export default function Contact() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <Input label="Full Name *" placeholder="Your name" />
               <Input
+                name="fullName"
+                value={form.fullName}
+                onChange={handleChange}
+                label="Full Name *"
+                placeholder="Your name"
+              />
+
+              <Input
+                name="company"
+                value={form.company}
+                onChange={handleChange}
                 label="Company / Organisation *"
                 placeholder="Your company"
               />
-              <Input label="Email Address *" placeholder="you@company.com" />
               <Input
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                label="Email Address *"
+                placeholder="you@company.com"
+              />
+              <Input
+                name="country"
+                value={form.country}
+                onChange={handleChange}
                 label="Destination Country *"
                 placeholder="e.g. Germany, Japan, USA"
               />
 
-              <Select label="Inquiry Type *" />
+              <Select
+                name="inquiryType"
+                value={form.inquiryType}
+                onChange={handleChange}
+                label="Inquiry Type *"
+              />
 
               <Input
+                name="quantity"
+                value={form.quantity}
+                onChange={handleChange}
                 label="Estimated Quantity"
                 placeholder="e.g. 500 kg, 2 tonnes, sample only"
               />
 
               <Input
+                name="useCase"
+                value={form.useCase}
+                onChange={handleChange}
                 full
                 label="Intended Use / Application"
                 placeholder="e.g. Natural yarn spinning, sustainable packaging, R&D"
               />
 
               <Textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 label="Your Message *"
-                placeholder="Tell us about your project, timeline, and any specific requirements…"
+                placeholder="Tell us about your project..."
               />
             </div>
 
@@ -145,7 +222,7 @@ export default function Contact() {
                 Send Inquiry →
               </button>
             </div>
-          </div>
+          </form>
 
           <div className="text-center max-w-3xl mx-auto">
             <blockquote
@@ -153,12 +230,10 @@ export default function Contact() {
               data-aos-delay="300"
               className="font-serif italic text-lg md:text-xl text-primary leading-relaxed"
             >
-              &ldquo;Nepal Hemp Collective is run by the people who do the work
-              — the farmers, the artisans, and a small coordination team that
-              connects Bajhang&apos;s hills to the global market. Every inquiry
-              matters to us.&rdquo;
+              {
+                "“Nepal Hemp Collective is run by the people who do the work — the farmers, the artisans, and a small coordination team that connects Bajhang's hills to the global market. Every inquiry matters to us.”"
+              }
             </blockquote>
-
             <p
               data-aos="fade-up"
               data-aos-delay="400"

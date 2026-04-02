@@ -1,10 +1,15 @@
-const Select = ({ label }) => (
+const Select = ({ label, name, value, onChange }) => (
   <div>
     <label className="block text-xs uppercase tracking-wide text-muted mb-2">
       {label}
     </label>
-    <select className="w-full bg-secondary border border-secondary-dd px-4 py-3 text-sm outline-none focus:border-accent">
-      <option>Select inquiry type…</option>
+    <select
+      name={name}
+      value={value}
+      onChange={onChange}
+      className="w-full bg-secondary border border-secondary-dd px-4 py-3 text-sm outline-none focus:border-accent"
+    >
+      <option value="">Select inquiry type…</option>
       <option>Wholesale Order</option>
       <option>Sample Kit Request</option>
       <option>Wholesale Quote</option>
