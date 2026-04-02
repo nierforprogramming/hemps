@@ -1,5 +1,6 @@
 import ProductCard from "@/components/product-card";
-import { products } from "@/constants";
+import { products, whyItems } from "@/constants";
+import Link from "next/link";
 import React from "react";
 
 const Products = () => {
@@ -59,6 +60,74 @@ const Products = () => {
             {products.map((item, i) => (
               <ProductCard key={i} item={item} index={i} />
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-secondary py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16">
+          {/* LEFT SIDE */}
+          <div>
+            <div className="text-xs tracking-[0.3em] uppercase text-accent/80 mb-6">
+              Why Source From Us
+            </div>
+
+            <div className="space-y-8">
+              {whyItems.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex gap-6 pb-6 border-b border-primary/10 last:border-none"
+                >
+                  {/* Number */}
+                  <div className="text-accent font-semibold text-xl font-serif">
+                    {item.num}
+                  </div>
+
+                  {/* Text */}
+                  <div>
+                    <h3 className="font-sans text-lg text-primary mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-muted text-sm leading-relaxed max-w-md">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="flex items-center">
+            <div className="bg-secondary-dk border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
+              {/* Accent border */}
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent rounded-l-md" />
+
+              {/* Label */}
+              <div className="text-xs tracking-[0.25em] uppercase text-accent mb-4">
+                Processing Disclosure
+              </div>
+
+              {/* Quote */}
+              <blockquote className="font-serif italic text-primary text-lg leading-relaxed mb-6">
+                &ldquo;Our fiber is semi-processed and raw. We are transparent
+                about this — always.&rdquo;
+              </blockquote>
+
+              {/* Description */}
+              <p className="text-muted text-sm leading-relaxed mb-6">
+                Water-retted and sun-dried. Not degummed, not bleached, not
+                chemically softened. Your downstream team performs further
+                refinement. We supply the clean, traceable upstream.
+              </p>
+
+              {/* Button */}
+              <Link
+                href="/process"
+                className="btn btn-outline tracking-wide uppercase border-primary/40 text-primary hover:bg-primary hover:text-secondary"
+              >
+                Full Process Details →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

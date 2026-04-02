@@ -15,7 +15,7 @@ const sans = Jost({
 });
 
 export const metadata = {
-  title: "Nepal Hemps Collective — Raw. Pure. Himalayan.",
+  title: "Nepal Hemp Collective — Raw. Pure. Himalayan.",
   description:
     "Wild Himalayan hemp fiber, water-retted and hand-processed in Far-Western Nepal.",
 };
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      data-theme="nepalheme"
+      data-theme="nepalhemp"
       className={`${serif.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans pt-16">

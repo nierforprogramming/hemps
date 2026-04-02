@@ -167,3 +167,26 @@ export const products = [
     ],
   },
 ];
+
+export const whyItems = [
+  {
+    num: "1",
+    title: "Consistency Across Batches",
+    desc: "Our grading process produces reliable fiber quality across orders. We document each bale's grade and origin village — you know exactly what you're receiving.",
+  },
+  {
+    num: "2",
+    title: "Full Customs Documentation",
+    desc: "Complete export documentation: HS code classification, processing stage declaration, certificate of origin, phytosanitary certificates. No customs surprises.",
+  },
+  {
+    num: "3",
+    title: "A Sourcing Story That Holds Up",
+    desc: "Every fiber is traceable to a specific community in Bajhang. We provide sourcing narrative, artisan profiles, and community impact data for your brand marketing.",
+  },
+  {
+    num: "4",
+    title: "Direct Partnership, Not Brokerage",
+    desc: "You work with the collective directly. No intermediaries inflating cost or obscuring sourcing details — end to end.",
+  },
+];
