@@ -121,3 +121,49 @@ export const processSteps = [
     desc: "Graded fiber is compressed, baled, and sealed for export. We prepare full customs documentation: HS code classification, processing stage declaration, certificate of origin, and phytosanitary certificates where required. Every shipment leaves Bajhang fully documented.",
   },
 ];
+
+export const products = [
+  {
+    tag: "Primary Offering",
+    title: "Wild Himalayan Hemp Fiber",
+    headerBg: "bg-primary-md",
+    desc: "Long-strand, water-retted hemp fiber hand-harvested from wild populations in Bajhang district. Chemical-free from harvest to bale. Traceable to harvest village.",
+    useCases:
+      "Natural yarn spinning, eco-textile weaving, hemp rope and twine, composite reinforcement, sustainable packaging.",
+    meta: [
+      { label: "Form", value: "Loose hanks or bales" },
+      { label: "MOQ", value: "100 kg minimum" },
+      { label: "Stage", value: "Semi-processed raw" },
+      { label: "Stock", value: "Seasonal — inquire" },
+    ],
+  },
+  {
+    tag: "Secondary Offering",
+    title: "Lokta Fiber",
+    subtitle: "Daphne cannabina",
+    headerBg: "bg-primary-md",
+    desc: "Raw lokta bark fiber, hand-processed using traditional methods. Long foundational to Nepal's handmade paper industry; sought by natural fiber innovators for specialist applications.",
+    useCases:
+      "Specialty paper, natural textile blending, craft applications, sustainable packaging.",
+    meta: [
+      { label: "Form", value: "Loose hanks or sheets" },
+      { label: "MOQ", value: "50 kg minimum" },
+      { label: "Stage", value: "Semi-processed raw" },
+      { label: "Stock", value: "Limited — inquire early" },
+    ],
+  },
+  {
+    tag: "Custom Option",
+    title: "Mixed & Sample Research Lots",
+    headerBg: "bg-primary-lt",
+    desc: "For buyers exploring multiple fiber types or building a materials research library. Mixed sample lots and small R&D quantities with no minimum for sample kits.",
+    useCases:
+      "Material R&D, product development sampling, pilot programs, academic research.",
+    meta: [
+      { label: "Form", value: "Custom per spec" },
+      { label: "MOQ", value: "No minimum for samples" },
+      { label: "Stage", value: "Semi-processed raw" },
+      { label: "Pricing", value: "Custom — request quote" },
+    ],
+  },
+];
