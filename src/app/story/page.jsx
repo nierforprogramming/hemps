@@ -2,13 +2,26 @@ import ArtisanCard from "@/components/artisan-card";
 import { artisans } from "@/constants";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Story = () => {
   return (
     <>
-      <section className="bg-primary text-secondary relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary" />
+      <section className="relative text-secondary overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/mountain.jpeg"
+            alt="Mountain background"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
 
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-primary/20" />
+        {/* Content */}
         <div className="relative max-w-5xl mx-auto px-6 py-24 lg:py-32">
           <h1
             data-aos="fade-up"
@@ -96,8 +109,8 @@ const Story = () => {
               data-aos-delay="300"
               className="text-muted leading-relaxed"
             >
-              Nepal Hemps Collective brings together rural cottage industries
-              and artisan processors from across Bajhang district. We aggregate
+              Nepal Hemp Collective brings together rural cottage industries and
+              artisan processors from across Bajhang district. We aggregate
               wild-harvested hemp and lokta fiber, provide consistent quality
               sorting and packaging for export, and ensure that fair wages reach
               the farmers and artisans who do the actual work. We are not a

@@ -13,7 +13,7 @@ const Quote = () => {
 
         {/* Quote text */}
         <p className="font-serif italic tracking-wider text-primary text-xl md:text-2xl lg:text-[23px] leading-relaxed mb-8">
-          The traceability documentation Nepal Hemps Collective provides is
+          The traceability documentation Nepal Hemp Collective provides is
           unlike anything else we have sourced from South Asia. Every bale has a
           story we can actually tell.
         </p>

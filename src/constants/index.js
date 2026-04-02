@@ -83,42 +83,49 @@ export const processSteps = [
     tag: "Wild Harvesting",
     title: "The Plant Grows. We Follow It.",
     desc: "Wild hemp in Bajhang is not cultivated — it grows naturally on hillsides and river margins. Harvest teams, working in small family groups, hand-cut mature stalks at the base during the optimal window in late summer and autumn. No monoculture. No deforestation. No planting inputs.",
+    img: "/images/harvest.jpeg",
   },
   {
     num: "02",
     tag: "Field Sorting",
     title: "Quality Starts Before the River.",
     desc: "Immediately after cutting, stalks are sorted by length and maturity. Undersized or damaged stalks are set aside for local use. Consistent bundles are tied and transported to riverside retting sites on foot and by mule. This field-level sorting is the first quality checkpoint and determines fiber grade before retting begins.",
+    img: "/images/retting.jpeg",
   },
   {
     num: "03",
     tag: "River Retting",
     title: "Mountain Water Does the Work.",
     desc: "Sorted bundles are submerged in cold, fast-moving river water for 10–20 days. The microbial action in natural river water breaks down the pectin binding the fiber to the woody stalk — water retting. No chemicals added at any point. The result is fiber that separates cleanly from the hurd, with intact long strands.",
+    img: "/images/before-river.jpeg",
   },
   {
     num: "04",
     tag: "Hand Peeling",
     title: "Every Strand, Separated by Hand.",
     desc: "After retting, fiber is hand-stripped from the woody core. This is skilled, labor-intensive work done predominantly by women artisans. Hand-peeling produces long-strand fiber with minimal breakage — a quality that machine-decortication consistently fails to match. It is also the stage that sustains the majority of our artisan employment.",
+    img: "/images/drying.jpeg",
   },
   {
     num: "05",
     tag: "Sun Drying",
     title: "Altitude Air. No Heat Treatment.",
     desc: "Peeled fiber is spread on clean ground and dried in direct sunlight at altitude, where UV intensity and low humidity accelerate drying while preserving quality. No mechanical drying. No heat treatment. Typical drying time: 3–5 days depending on season and elevation.",
+    img: "/images/fiber.jpeg",
   },
   {
     num: "06",
     tag: "Quality Grading",
     title: "Consistent Quality. Every Bale.",
     desc: "Dried fiber is sorted by strand length, color consistency, and fineness. First-quality long-strand fiber is separated from shorter secondary fiber, which is sold separately for different downstream applications. Each grade is documented and labeled.",
+    img: "/images/grading.jpg",
   },
   {
     num: "07",
     tag: "Export Packaging",
     title: "Ready for International Shipment.",
     desc: "Graded fiber is compressed, baled, and sealed for export. We prepare full customs documentation: HS code classification, processing stage declaration, certificate of origin, and phytosanitary certificates where required. Every shipment leaves Bajhang fully documented.",
+    img: "/images/export.jpg",
   },
 ];
 
@@ -188,5 +195,29 @@ export const whyItems = [
     num: "4",
     title: "Direct Partnership, Not Brokerage",
     desc: "You work with the collective directly. No intermediaries inflating cost or obscuring sourcing details — end to end.",
+  },
+];
+
+export const contactCards = [
+  {
+    tag: "Wholesale & Export",
+    title: "Buying at Volume?",
+    email: "wholesale@nepalhempcollective.com",
+    desc: "Quantity (kg), destination country, intended use, and timeline. We respond within 2 business days.",
+    border: "border-t-[3px] border-primary",
+  },
+  {
+    tag: "Samples & Product Questions",
+    title: "Evaluating Our Fiber?",
+    email: "samples@nepalhempcollective.com",
+    desc: "We dispatch 100–500g sample kits to qualifying manufacturers. Include your company name and intended application.",
+    border: "border-t-[3px] border-accent",
+  },
+  {
+    tag: "Press, Partnerships & NGOs",
+    title: "Something Else?",
+    email: "partnerships@nepalhempcollective.com",
+    desc: "Media, fair-trade certification, academic collaboration, and NGO discussions welcome. Include a brief description of your organisation.",
+    border: "border-t-[3px] border-primary/70",
   },
 ];

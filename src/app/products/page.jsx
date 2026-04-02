@@ -66,7 +66,7 @@ const Products = () => {
       <section className="bg-secondary py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* LEFT SIDE */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <div className="text-xs tracking-[0.3em] uppercase text-accent/80 mb-6">
               Why Source From Us
             </div>
@@ -97,7 +97,11 @@ const Products = () => {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="flex items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="flex items-center"
+          >
             <div className="bg-secondary-dk border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
               {/* Accent border */}
               <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent rounded-l-md" />
@@ -126,6 +130,47 @@ const Products = () => {
                 className="btn btn-outline tracking-wide uppercase border-primary/40 text-primary hover:bg-primary hover:text-secondary"
               >
                 Full Process Details →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-secondary py-16 lg:py-15">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="max-w-4xl mx-auto px-6"
+        >
+          <div className="relative border border-primary/10 bg-[#D9D1C2] rounded-sm text-center px-6 py-12 lg:py-14">
+            {/* Top accent line */}
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-accent" />
+
+            {/* Heading */}
+            <h2 className="font-serif text-2xl md:text-3xl text-primary mb-4">
+              Ready to Place an Order?
+            </h2>
+
+            {/* Description */}
+            <p className="text-muted max-w-xl mx-auto leading-relaxed mb-8">
+              Tell us your quantity, destination country, and intended use —
+              we’ll respond within 2 business days with availability, pricing,
+              and documentation details.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 uppercase">
+              <Link
+                href="/contact"
+                className="btn hover:-translate-y-0.5 transition-transform duration-100  bg-accent text-secondary border-none hover:bg-accent-lt px-6"
+              >
+                Request a Sample Kit
+              </Link>
+
+              <Link
+                href="/contact"
+                className="btn hover:-translate-y-0.5 transition-transform duration-100  btn-outline border-primary/40 text-primary hover:bg-primary hover:text-secondary px-6"
+              >
+                Get a Wholesale Quote
               </Link>
             </div>
           </div>

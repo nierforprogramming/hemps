@@ -1,13 +1,54 @@
-import ProcessStepCard from "@/components/process-step-card";
+"use client";
 import { processSteps } from "@/constants";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const Process = () => {
+  const [active, setActive] = useState(0);
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const observers = [];
+
+    refs.current.forEach((ref, index) => {
+      if (!ref) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActive(index);
+          }
+        },
+        {
+          threshold: 0.25, // how much visible before activating
+        },
+      );
+
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
+
   return (
     <>
-      <section className="bg-primary text-secondary relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary" />
+      <section className="relative text-secondary overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/river.jpg"
+            alt="River retting process"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
 
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-primary/20" />
+
+        {/* Content */}
         <div className="relative max-w-5xl mx-auto px-6 py-24 lg:py-32">
           <h1
             data-aos="fade-up"
@@ -30,12 +71,71 @@ const Process = () => {
           </p>
         </div>
       </section>
+      <section className="bg-secondary text-text relative">
+        <div className="max-w-6xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-16">
+          {/* LEFT - TEXT */}
+          <div>
+            {processSteps.map((step, i) => (
+              <div key={i} className="py-10 border-b border-secondary-dd">
+                <div className="flex gap-6 md:gap-10">
+                  <div className="font-serif text-4xl text-accent/30 min-w-[60px]">
+                    {step.num}
+                  </div>
 
-      <section className="bg-secondary text-text">
-        <div className="max-w-3xl mx-auto px-6 py-20 lg:py-28">
-          {processSteps.map((step, i) => (
-            <ProcessStepCard key={i} step={step} index={i} />
-          ))}
+                  <div className="space-y-3">
+                    <div className="inline-block text-[10px] tracking-[0.25em] uppercase bg-secondary-dk text-muted px-3 py-1 rounded">
+                      {step.tag}
+                    </div>
+
+                    <h3
+                      ref={(el) => (refs.current[i] = el)}
+                      className="font-serif font-semibold text-lg text-primary"
+                    >
+                      {step.title}
+                    </h3>
+
+                    <p
+                      ref={(el) => (refs.current[i] = el)}
+                      className="text-muted text-sm leading-relaxed"
+                    >
+                      {step.desc}
+                    </p>
+                  </div>
+                </div>
+
+                {/* MOBILE IMAGE */}
+                <div className="relative w-full h-[180px] mt-6 rounded-md overflow-hidden lg:hidden">
+                  <Image
+                    src={step.img}
+                    alt={step.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-primary/20" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* RIGHT - IMAGE (DESKTOP ONLY) */}
+          <div className="relative hidden lg:block">
+            <div className="sticky top-32 w-full h-[420px] rounded-lg overflow-hidden">
+              {processSteps.map((step, i) => (
+                <Image
+                  key={i}
+                  src={step.img}
+                  alt={step.title}
+                  fill
+                  className={`object-cover transition-opacity duration-700 ${
+                    active === i ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+
+              {/* subtle overlay */}
+              <div className="absolute inset-0 bg-primary/20" />
+            </div>
+          </div>
         </div>
       </section>
 
