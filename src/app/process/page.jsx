@@ -104,7 +104,7 @@ const Process = () => {
                 </div>
 
                 {/* MOBILE IMAGE */}
-                <div className="relative w-full h-[180px] mt-6 rounded-md overflow-hidden lg:hidden">
+                <div className="relative w-full h-60 mt-6 rounded-md overflow-hidden lg:hidden">
                   <Image
                     src={step.img}
                     alt={step.title}
