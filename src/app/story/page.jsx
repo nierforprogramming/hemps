@@ -7,7 +7,7 @@ import Image from "next/image";
 const Story = () => {
   return (
     <>
-      <section className="relative text-secondary overflow-hidden">
+      <section className="relative bg-primary text-secondary overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image

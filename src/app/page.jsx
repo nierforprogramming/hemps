@@ -11,7 +11,7 @@ import Image from "next/image";
 const Home = () => {
   return (
     <>
-      <section className="relative text-secondary overflow-hidden min-h-[90vh]">
+      <section className="relative bg-primary text-secondary overflow-hidden min-h-[90vh]">
         <Image
           src="/images/hero.jpeg"
           fill
