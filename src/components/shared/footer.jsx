@@ -110,8 +110,8 @@ const Footer = () => {
             >
               Terms and Conditions
             </Link>
-            <Link href="#" className="hover:text-secondary/80">
-              Fair Trade Statement
+            <Link href="shipping-returns" className="hover:text-secondary/80">
+              Shipping and Returns
             </Link>
           </div>
         </div>
