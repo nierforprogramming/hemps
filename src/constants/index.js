@@ -143,12 +143,15 @@ export const products = [
       { label: "Stage", value: "Semi-processed raw" },
       { label: "Stock", value: "Seasonal — inquire" },
     ],
+    image: "/images/drying.jpeg",
   },
   {
     tag: "Secondary Offering",
     title: "Lokta Fiber",
     subtitle: "Daphne cannabina",
     headerBg: "bg-primary-md",
+    image: "/images/fiber.jpeg",
+
     desc: "Raw lokta bark fiber, hand-processed using traditional methods. Long foundational to Nepal's handmade paper industry; sought by natural fiber innovators for specialist applications.",
     useCases:
       "Specialty paper, natural textile blending, craft applications, sustainable packaging.",
@@ -166,6 +169,7 @@ export const products = [
     desc: "For buyers exploring multiple fiber types or building a materials research library. Mixed sample lots and small R&D quantities with no minimum for sample kits.",
     useCases:
       "Material R&D, product development sampling, pilot programs, academic research.",
+
     meta: [
       { label: "Form", value: "Custom per spec" },
       { label: "MOQ", value: "No minimum for samples" },

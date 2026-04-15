@@ -1,40 +1,64 @@
+import Image from "next/image";
 import React from "react";
 
-const ProductCard = ({ item, index }) => {
+const ProductCard = ({ item }) => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-delay="200"
-      className="flex flex-col h-full border hover:-translate-y-1.5 border-secondary-dk rounded-sm overflow-hidden bg-secondary"
+      className="group flex flex-col h-full border border-secondary-dk rounded-md overflow-hidden bg-base-100 transition hover:-translate-y-1 hover:shadow-lg"
     >
-      {/* HEADER */}
-      <div className={`px-6 py-6 ${item.headerBg} min-h-[140px] flex flex-col`}>
-        <div className="text-[10px] tracking-[0.25em] p-0.5 rounded-sm bg-accent/20 w-fit uppercase text-accent-lt mb-3">
+      {/* IMAGE */}
+
+      {item?.image ? (
+        <div className="relative h-52 overflow-hidden">
+          <Image
+            src={item?.image}
+            alt={item.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+
+          {/* subtle overlay */}
+          <div className="absolute inset-0 bg-primary/20" />
+        </div>
+      ) : (
+        ""
+      )}
+
+      {/* CONTENT */}
+      <div className="p-6 flex flex-col flex-1">
+        {/* TAG */}
+        <div className="text-[10px] tracking-[0.25em] uppercase text-accent mb-3">
           {item.tag}
         </div>
 
-        <h3 className="font-serif text-xl text-secondary leading-tight max-w-[22ch]">
+        {/* TITLE */}
+        <h3 className="font-serif text-xl text-primary mb-1 leading-tight">
           {item.title}
         </h3>
 
+        {/* SUBTITLE */}
         {item.subtitle && (
-          <div className="text-xs text-secondary/60 mt-1">{item.subtitle}</div>
+          <p className="text-xs text-muted italic mb-3">{item.subtitle}</p>
         )}
-      </div>
 
-      {/* BODY */}
-      <div className="px-6 py-6 space-y-4 flex flex-col flex-1">
-        <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
+        {/* DESCRIPTION */}
+        <p className="text-sm text-muted leading-relaxed mb-4">{item.desc}</p>
 
-        <p className="text-muted text-sm leading-relaxed">
-          <strong className="text-text">Use cases:</strong> {item.useCases}
+        {/* USE CASES */}
+        <p className="text-sm text-muted leading-relaxed mb-6">
+          <span className="text-text font-medium">Use cases:</span>{" "}
+          {item.useCases}
         </p>
 
-        {/* META GRID */}
-        <div className="grid grid-cols-2 gap-3 pt-4 mt-auto">
+        {/* DIVIDER */}
+        <div className="border-t border-secondary-dd mb-4" />
+
+        {/* META */}
+        <div className="grid grid-cols-2 gap-3 mt-auto">
           {item.meta.map((m, i) => (
-            <div key={i} className="bg-secondary-dk px-4 py-3 rounded-sm">
-              <div className="text-[10px] uppercase tracking-[0.2em] text-muted mb-1">
+            <div key={i}>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-muted">
                 {m.label}
               </div>
               <div className="text-sm text-text">{m.value}</div>
