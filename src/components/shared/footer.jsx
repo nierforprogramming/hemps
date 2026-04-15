@@ -104,8 +104,11 @@ const Footer = () => {
             <Link href="/privacy-policy" className="hover:text-secondary/80">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-secondary/80">
-              Export Terms
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-secondary/80"
+            >
+              Terms and Conditions
             </Link>
             <Link href="#" className="hover:text-secondary/80">
               Fair Trade Statement
