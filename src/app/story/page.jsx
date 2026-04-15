@@ -28,8 +28,10 @@ const Story = () => {
             data-aos-delay="200"
             className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-6"
           >
-            <span className="block">Where the Mountains</span>
-            <span className="block italic text-secondary/90">Do the Work</span>
+            <span className="block">Forged in the Himalayas,</span>
+            <span className="block italic text-secondary/90">
+              Structured for the World.
+            </span>
           </h1>
 
           <p
@@ -50,96 +52,103 @@ const Story = () => {
               data-aos="fade-up"
               className="font-serif text-2xl md:text-3xl text-primary"
             >
-              Bajhang, Far-Western Nepal
+              Our Story
             </h2>
 
-            <p
-              data-aos="fade-up"
-              data-aos-delay="100"
-              className="text-muted leading-relaxed"
-            >
-              There are places in Nepal that the modern supply chain has not yet
-              reached. Bajhang is one of them.
-            </p>
+            <div className="space-y-2">
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="font-serif"
+              >
+                The Altitude Advantage
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="text-muted leading-relaxed"
+              >
+                At Nepal Hemps Collective, we know that true sustainability
+                cannot be manufactured in a laboratory. It has to be grown,
+                harvested, and preserved. We are a direct-to-origin supplier of
+                premium, wild-harvested Himalayan hemp and lokta fibers,
+                dedicated to bridging the gap between remote mountain
+                communities and the global sustainable textile industry. Our
+                supply chain begins where most commercial agriculture ends. In
+                the Bajhang district of Far-Western Nepal, tucked high into the
+                Himalayan foothills, the air is thin, the terrain is rugged, and
+                the winters are unforgiving. Here, wild hemp is not planted in
+                commercial monocultures; it is seeded by the wind, watered by
+                snowmelt, and grows naturally on steep hillsides and river
+                margins. This extreme high-altitude exposure forces the plant to
+                adapt, naturally yielding a bast fiber that is incredibly
+                strong, long-lasting, and highly weather-resistant.
+              </p>
+            </div>
 
-            <p
-              data-aos="fade-up"
-              data-aos-delay="150"
-              className="text-muted leading-relaxed"
-            >
-              Tucked into the Himalayan foothills of Far-Western Nepal, Bajhang
-              district sits at an altitude where the air is thin, the winters
-              are long, and the wild hemp grows without cultivation — seeded by
-              wind, watered by snowmelt, harvested by the same families who have
-              been gathering it for centuries. This is not a romanticized
-              version of remoteness. It is simply the geography of where we
-              work.
-            </p>
+            <div className="space-y-2">
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="font-serif"
+              >
+                Zero Chemicals, Zero Compromise
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="text-muted leading-relaxed"
+              >
+                While the modern textile industry relies on heavy machinery and
+                harsh chemicals to extract fibers quickly, we rely on time,
+                water, and centuries of generational knowledge. We classify our
+                output as semi-processed raw fiber because we believe in
+                complete processing transparency—our fiber leaves Nepal exactly
+                as nature intended. Instead of using industrial chemicals to
+                break down the plant, our stalks are submerged in cold,
+                fast-moving Himalayan rivers. This natural microbial action
+                cleanly separates the fiber from the woody hurd without
+                compromising its structural integrity. From there, the fibers
+                are meticulously peeled entirely by hand. This highly skilled,
+                labor-intensive work is done predominantly by local women who
+                have inherited these techniques from their mothers and
+                grandmothers. Finally, the extracted fiber is laid out under the
+                intense UV rays of the Himalayan sun, locking in its raw
+                strength and earthy texture without the use of artificial heat
+                treatments.
+              </p>
+            </div>
 
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="text-muted leading-relaxed"
-            >
-              The people of Bajhang have always known how to read the plant.
-              They know which slopes produce the longest, strongest fiber. They
-              know when to harvest before the stalks turn brittle. They know how
-              to ret the bark in the cold, fast-moving rivers that rush down
-              from the high passes — a process that loosens the fiber from the
-              woody core without chemicals, relying entirely on water, time, and
-              knowledge. Then the peeling: done almost entirely by hand,
-              predominantly by women, who have learned the motion from their
-              mothers and grandmothers.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="250"
-              className="text-muted leading-relaxed"
-            >
-              For generations, this knowledge sustained households. Then
-              synthetic materials arrived, markets shifted, and what was once a
-              vital rural livelihood became a peripheral one. The collective was
-              formed as a response to that shift — not to recreate the past, but
-              to build a more durable future for it.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="text-muted leading-relaxed"
-            >
-              Nepal Hemp Collective brings together rural cottage industries and
-              artisan processors from across Bajhang district. We aggregate
-              wild-harvested hemp and lokta fiber, provide consistent quality
-              sorting and packaging for export, and ensure that fair wages reach
-              the farmers and artisans who do the actual work. We are not a
-              factory. We are a structured network of people who have been doing
-              this longer than most brands have existed.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="350"
-              className="text-muted leading-relaxed"
-            >
-              The fiber we supply is semi-processed and raw — we are transparent
-              about this. Our buyers are manufacturers who value the absence of
-              industrial intervention in the upstream chain. They come to us for
-              consistency, traceability, and a sourcing story that is true.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="400"
-              className="text-muted leading-relaxed"
-            >
-              What we want for the next generation of Bajhang&apos:s artisans is
-              straightforward: that their knowledge is worth something on the
-              global market, that they are paid fairly for it, and that the wild
-              hemp growing on their hillsides is recognized as what it is — one
-              of the world&apos:s most traceable, sustainable plant fibers.
-            </p>
+            <div className="space-y-2">
+              <h3
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="font-serif"
+              >
+                A Supply Chain Built on Human Dignity
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="text-muted leading-relaxed"
+              >
+                We are not simply a broker or a factory. Nepal Hemps Collective
+                is a highly structured network of over 200 artisan families and
+                rural cottage industries. Before our collective was formed,
+                shifts in the global market threatened to render this ancient
+                knowledge obsolete. By aggregating this wild-harvested fiber and
+                standardizing the quality for export, we have created a durable
+                economic engine for these remote communities. We bypass
+                traditional middlemen, ensuring that fair, premium wages go
+                directly into the hands of the people who hike the hills, cut
+                the stalks, and peel the fibers. Today, Nepal Hemps Collective
+                successfully supplies partners across 18 international export
+                destinations. When you source from us, you are not just buying
+                raw material. You are securing a 100% chemical-free, transparent
+                upstream supply chain—and investing in a profoundly positive
+                future for the communities that make it possible.
+              </p>
+            </div>
           </div>
         </div>
       </section>
