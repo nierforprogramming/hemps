@@ -20,7 +20,7 @@ const Process = () => {
           }
         },
         {
-          threshold: 0.25, // how much visible before activating
+          threshold: 0.25,
         },
       );
 
@@ -37,7 +37,7 @@ const Process = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/river.jpg"
+            src="/images/retting.jpeg"
             alt="River retting process"
             fill
             priority
