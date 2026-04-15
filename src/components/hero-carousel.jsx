@@ -11,6 +11,7 @@ const images = [
   "/images/hero.jpeg",
   "/images/mountain-view.jpg",
   "/images/hilly.jpg",
+  "/images/mountain-house.jpg",
 ];
 
 export default function HeroCarousel() {
