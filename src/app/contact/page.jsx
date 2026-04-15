@@ -75,47 +75,6 @@ export default function Contact() {
       </section>
       <section className="bg-secondary text-text">
         <div className="max-w-4xl mx-auto px-6 py-20 lg:py-10">
-          <section className="bg-secondary text-text">
-            <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28">
-              <p className="text-xs tracking-[0.25em] uppercase text-accent mb-10">
-                Direct Contacts
-              </p>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {contactCards.map((card, i) => (
-                  <div
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                    key={i}
-                    className={`bg-[#F4EFE6] p-8 rounded-md border border-[#E6DFD2] relative`}
-                  >
-                    <div
-                      className={`absolute top-0 left-0 w-full h-[2px] ${
-                        i === 1 ? "bg-accent" : "bg-primary"
-                      }`}
-                    />
-
-                    <p className="text-[11px] tracking-[0.25em] uppercase text-muted mb-4">
-                      {card.tag}
-                    </p>
-
-                    <h3 className="font-serif text-2xl text-primary mb-3">
-                      {card.title}
-                    </h3>
-
-                    <p className="text-accent text-sm mb-5 break-words">
-                      {card.email}
-                    </p>
-
-                    <p className="text-muted text-sm leading-relaxed">
-                      {card.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
           <div
             data-aos="fade-up"
             data-aos-delay="300"
@@ -140,7 +99,7 @@ export default function Contact() {
             </p>
 
             <h2 className="font-serif text-3xl md:text-4xl text-primary mb-3">
-              Get in Touch Directly
+              Get in Touch
             </h2>
 
             <p className="text-muted mb-8 max-w-2xl">
