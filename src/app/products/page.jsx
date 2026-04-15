@@ -141,7 +141,7 @@ const Products = () => {
           data-aos-delay="400"
           className="max-w-4xl mx-auto px-6"
         >
-          <div className="relative border border-primary/10 bg-[#D9D1C2] rounded-sm text-center px-6 py-12 lg:py-14">
+          <div className="relative border border-primary/10 bg-secondary-dk rounded-sm text-center px-6 py-12 lg:py-14">
             {/* Top accent line */}
             <div className="absolute top-0 left-0 w-full h-[2px] bg-accent" />
 

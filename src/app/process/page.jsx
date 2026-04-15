@@ -83,7 +83,7 @@ const Process = () => {
                   </div>
 
                   <div className="space-y-3">
-                    <div className="inline-block text-[10px] tracking-[0.25em] uppercase bg-secondary-dk text-muted px-3 py-1 rounded">
+                    <div className="inline-block text-[10px] tracking-[0.25em] uppercase bg-accent-lt text-accent-content px-3 py-1 rounded">
                       {step.tag}
                     </div>
 

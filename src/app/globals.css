@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /*  Primary  */
+  /*  Primary (KEEP)  */
   --color-primary: #1b3820;
   --color-primary-md: #2c5438;
   --color-primary-lt: #3e7250;
 
-  /*  Secondary  */
-  --color-secondary: #f4efe4;
-  --color-secondary-dk: #eae2d3;
-  --color-secondary-dd: #ddd4c0;
+  --color-secondary: #f1f5f9; /* light slate */
+  --color-secondary-dk: #e2e8f0;
+  --color-secondary-dd: #cbd5e1;
 
-  /*  Accent */
-  --color-accent: #c2882a;
-  --color-accent-lt: #e0a84a;
+  /*  Accent (PREMIUM GOLD)  */
+  --color-accent: #d4af37;
+  --color-accent-lt: #e6c766;
 
-  /*  Text */
-  --color-text: #1a1712;
-  --color-muted: #6b5f4c;
-  --color-faint: #9c8e7b;
+  /*  Text (HIGH CONTRAST)  */
+  --color-text: #0a0a0a;
+  --color-muted: #525252;
+  --color-faint: #a3a3a3;
 
-  /*  Fonts */
+  /* Fonts */
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
 }
@@ -34,32 +33,15 @@
 @plugin "daisyui/theme" {
   name: "nepalhemp";
 
-  /* Core */
   --color-primary: #1b3820;
-  --color-primary-content: #f4efe4;
+  --color-primary-md: #2c5438;
+  --color-primary-lt: #3e7250;
 
-  --color-secondary: #f4efe4;
-  --color-secondary-content: #1a1712;
+  --color-secondary: #f1f5f9; /* light slate */
+  --color-secondary-dk: #e2e8f0;
+  --color-secondary-dd: #cbd5e1;
 
-  --color-accent: #c2882a;
-  --color-accent-content: #1a1712;
-
-  --color-neutral: #1a1712;
-  --color-base-100: #f4efe4;
-
-  /* Semantic */
-  --color-info: #3e7250;
-  --color-success: #2c5438;
-  --color-warning: #e0a84a;
-  --color-error: #b91c1c;
+  /*  Accent (PREMIUM GOLD)  */
+  --color-accent: #d4af37;
+  --color-accent-lt: #e6c766;
 }
-
-/* 
-    BASE STYLES */
-/* @layer base {
-  body {
-    color: var(--color-text);
-    font-family: var(--font-sans);
-    background-color: var(--color-secondary);
-  }
-} */
