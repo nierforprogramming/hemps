@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./logo";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -87,6 +88,14 @@ const Footer = () => {
               <span className="hover:text-secondary/90 text-xs mt-2 cursor-pointer">
                 Bajhang, Far-Western Nepal
               </span>
+              <Link
+                href="https://www.linkedin.com/company/nepal-hemp-collective/?viewAsMember=true"
+                target="_blank"
+                className="flex gap-4"
+              >
+                <span>Connect from</span>
+                <RiLinkedinBoxFill className="text-xl" />
+              </Link>
             </div>
           </div>
         </div>
