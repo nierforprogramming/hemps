@@ -3,7 +3,7 @@ import { useState } from "react";
 import Input from "@/components/shared/input";
 import Select from "@/components/shared/select";
 import Textarea from "@/components/shared/textarea";
-import { contactCards } from "@/constants";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -36,15 +36,25 @@ export default function Contact() {
         body: JSON.stringify(form),
       });
 
-      if (!res.ok) throw new Error("Failed to send");
+      const data = await res.json();
 
-      alert("Inquiry sent successfully!");
+      if (!res.ok) {
+        if (data.errors) {
+          Object.values(data.errors).forEach((err) => {
+            toast.error(err);
+          });
+        } else {
+          toast.error(data.error || "Something went wrong");
+        }
+        return;
+      }
+
+      toast.success("Inquiry sent successfully");
     } catch (err) {
       console.error(err);
-      alert("Something went wrong");
+      toast.error("Network error");
     }
   };
-
   return (
     <>
       <section className="bg-primary text-secondary relative overflow-hidden">
@@ -177,9 +187,25 @@ export default function Contact() {
                 parties.
               </p>
 
-              <button className="bg-accent text-secondary px-6 py-3 text-sm uppercase tracking-wide hover:bg-accent-lt transition">
+              <button
+                type="submit"
+                className="bg-accent text-secondary px-6 py-3 text-sm uppercase tracking-wide hover:bg-accent-lt transition"
+              >
                 Send Inquiry →
               </button>
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+              />
             </div>
           </form>
 

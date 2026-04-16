@@ -9,6 +9,7 @@ const Input = ({ label, placeholder, full, name, value, onChange }) => (
       value={value}
       onChange={onChange}
       placeholder={placeholder}
+      required
       className="w-full bg-secondary border border-secondary-dd px-4 py-3 text-sm outline-none focus:border-accent"
     />
   </div>
