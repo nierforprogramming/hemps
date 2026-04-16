@@ -78,7 +78,7 @@ export default function Contact() {
           <div
             data-aos="fade-up"
             data-aos-delay="300"
-            className="bg-secondary-dk border border-secondary-dd p-5 rounded-md mb-16"
+            className="bg-accent/10 border border-secondary-dd p-5 rounded-md mb-16"
           >
             <p className="text-sm text-muted leading-relaxed">
               <span className="font-semibold text-primary">Response time:</span>{" "}
@@ -92,7 +92,7 @@ export default function Contact() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-secondary-dk border border-secondary-dd rounded-md p-6 lg:p-10 mb-20"
+            className="bg-accent/10 border border-secondary-dd rounded-md p-6 lg:p-10 mb-20"
           >
             <p className="text-xs tracking-[0.25em] uppercase text-accent mb-2">
               Send an Inquiry

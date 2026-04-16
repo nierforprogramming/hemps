@@ -102,7 +102,7 @@ const Products = () => {
             data-aos-delay="400"
             className="flex items-center"
           >
-            <div className="bg-secondary-dk border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
+            <div className="bg-primary border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
               {/* Accent border */}
               <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent rounded-l-md" />
 
@@ -112,13 +112,13 @@ const Products = () => {
               </div>
 
               {/* Quote */}
-              <blockquote className="font-serif italic text-primary text-lg leading-relaxed mb-6">
+              <blockquote className="font-serif italic text-white text-lg leading-relaxed mb-6">
                 &ldquo;Our fiber is semi-processed and raw. We are transparent
                 about this — always.&rdquo;
               </blockquote>
 
               {/* Description */}
-              <p className="text-muted text-sm leading-relaxed mb-6">
+              <p className="text-secondary text-sm leading-relaxed mb-6">
                 Water-retted and sun-dried. Not degummed, not bleached, not
                 chemically softened. Your downstream team performs further
                 refinement. We supply the clean, traceable upstream.
@@ -127,7 +127,7 @@ const Products = () => {
               {/* Button */}
               <Link
                 href="/process"
-                className="btn btn-outline tracking-wide uppercase border-primary/40 text-primary hover:bg-primary hover:text-secondary"
+                className="btn btn-outline tracking-wide uppercase border-secondary/40 text-secondary hover:bg-accent hover:text-secondary"
               >
                 Full Process Details →
               </Link>
@@ -141,17 +141,17 @@ const Products = () => {
           data-aos-delay="400"
           className="max-w-4xl mx-auto px-6"
         >
-          <div className="relative border border-primary/10 bg-secondary-dk rounded-sm text-center px-6 py-12 lg:py-14">
+          <div className="relative border border-primary/10 bg-primary rounded-sm text-center px-6 py-12 lg:py-14">
             {/* Top accent line */}
             <div className="absolute top-0 left-0 w-full h-[2px] bg-accent" />
 
             {/* Heading */}
-            <h2 className="font-serif text-2xl md:text-3xl text-primary mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl text-secondary mb-4">
               Ready to Place an Order?
             </h2>
 
             {/* Description */}
-            <p className="text-muted max-w-xl mx-auto leading-relaxed mb-8">
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed mb-8">
               Tell us your quantity, destination country, and intended use —
               we’ll respond within 2 business days with availability, pricing,
               and documentation details.
@@ -168,7 +168,7 @@ const Products = () => {
 
               <Link
                 href="/contact"
-                className="btn hover:-translate-y-0.5 transition-transform duration-100  btn-outline border-primary/40 text-primary hover:bg-primary hover:text-secondary px-6"
+                className="btn hover:-translate-y-0.5 transition-transform duration-100  btn-outline border-secondary /40 text-secondary px-6"
               >
                 Get a Wholesale Quote
               </Link>

@@ -125,7 +125,7 @@ export const processSteps = [
     tag: "Export Packaging",
     title: "Ready for International Shipment.",
     desc: "Graded fiber is compressed, baled, and sealed for export. We prepare full customs documentation: HS code classification, processing stage declaration, certificate of origin, and phytosanitary certificates where required. Every shipment leaves Bajhang fully documented.",
-    img: "/images/export.jpg",
+    img: "/images/grading.jpg",
   },
 ];
 
@@ -143,14 +143,14 @@ export const products = [
       { label: "Stage", value: "Semi-processed raw" },
       { label: "Stock", value: "Seasonal — inquire" },
     ],
-    image: "/images/drying.jpeg",
+    image: "/images/fiber.jpeg",
   },
   {
     tag: "Secondary Offering",
     title: "Lokta Fiber",
     subtitle: "Daphne cannabina",
     headerBg: "bg-primary-md",
-    image: "/images/fiber.jpeg",
+    image: "/images/drying.jpeg",
 
     desc: "Raw lokta bark fiber, hand-processed using traditional methods. Long foundational to Nepal's handmade paper industry; sought by natural fiber innovators for specialist applications.",
     useCases:
