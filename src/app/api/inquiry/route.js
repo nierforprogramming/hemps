@@ -76,18 +76,128 @@ export async function POST(req) {
       replyTo: clean.email,
       subject: `New Inquiry from ${clean.fullName}`,
       html: `
-        <h2>New Inquiry Received</h2>
-        <p><strong>Name:</strong> ${clean.fullName}</p>
-        <p><strong>Company:</strong> ${clean.company}</p>
-        <p><strong>Email:</strong> ${clean.email}</p>
-        <p><strong>Country:</strong> ${clean.country}</p>
-        <p><strong>Inquiry Type:</strong> ${clean.inquiryType}</p>
-        <p><strong>Quantity:</strong> ${clean.quantity}</p>
-        <p><strong>Use Case:</strong> ${clean.useCase}</p>
-        <p><strong>Message:</strong></p>
-        <p>${clean.message}</p>
-      `,
-      headers: { "X-Entity-Ref-ID": "newmail" },
+  <div style="margin:0; padding:0; background:#f1f5f9; font-family: Arial, sans-serif;">
+    
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#f1f5f9;">
+      <tr>
+        <td align="center">
+
+          <!-- Wrapper -->
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center">
+
+                <!-- Main Container -->
+                <table 
+                  width="100%" 
+                  cellpadding="0" 
+                  cellspacing="0" 
+                  style="max-width:600px; margin:0 auto; background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; overflow:hidden;"
+                >
+
+                  <!-- Header -->
+                  <tr>
+                    <td style="background:#1b3820; padding:20px;">
+                      <h2 style="margin:0; color:#d4af37; font-size:18px;">
+                        New Inquiry Received
+                      </h2>
+                    </td>
+                  </tr>
+
+                  <!-- Body -->
+                  <tr>
+                    <td style="padding:24px;">
+
+                      <!-- Info Table -->
+                      <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px; color:#0a0a0a;">
+                        
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Name</strong></td>
+                          <td style="padding:8px 0;">${clean.fullName}</td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Company</strong></td>
+                          <td style="padding:8px 0;">${clean.company}</td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Email</strong></td>
+                          <td style="padding:8px 0;">
+                            <a href="mailto:${clean.email}" style="color:#1b3820; text-decoration:none;">
+                              ${clean.email}
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Country</strong></td>
+                          <td style="padding:8px 0;">${clean.country}</td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Inquiry Type</strong></td>
+                          <td style="padding:8px 0;">${clean.inquiryType}</td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Quantity</strong></td>
+                          <td style="padding:8px 0;">${clean.quantity || "-"}</td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding:8px 0; color:#525252;"><strong>Use Case</strong></td>
+                          <td style="padding:8px 0;">${clean.useCase || "-"}</td>
+                        </tr>
+
+                      </table>
+
+                      <!-- Message -->
+                      <div style="margin-top:24px;">
+                        <p style="margin:0 0 8px; font-size:13px; color:#525252;">
+                          <strong>Message</strong>
+                        </p>
+
+                        <div style="background:#f1f5f9; padding:16px; border-left:4px solid #d4af37; border-radius:6px; font-size:14px; color:#0a0a0a; line-height:1.6;">
+                          ${clean.message}
+                        </div>
+                      </div>
+
+                      <!-- Button -->
+                      <div style="margin-top:24px;">
+                        <a href="mailto:${clean.email}"
+                           style="display:inline-block; padding:10px 18px; background:#1b3820; color:#ffffff; text-decoration:none; font-size:13px; border-radius:6px;">
+                          Reply to ${clean.fullName}
+                        </a>
+                      </div>
+
+                      <!-- Timestamp -->
+                      <p style="margin-top:20px; font-size:12px; color:#a3a3a3;">
+                        Received at: ${new Date().toLocaleString()}
+                      </p>
+
+                    </td>
+                  </tr>
+
+                  <!-- Footer -->
+                  <tr>
+                    <td style="padding:16px; text-align:center; font-size:11px; color:#a3a3a3; background:#f1f5f9;">
+                      Nepal Hemp Collective • Internal Notification
+                    </td>
+                  </tr>
+
+                </table>
+
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  `,
     };
 
     const transporter = nodemailer.createTransport({

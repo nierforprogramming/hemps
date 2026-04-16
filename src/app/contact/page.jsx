@@ -189,7 +189,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="bg-accent text-secondary px-6 py-3 text-sm uppercase tracking-wide hover:bg-accent-lt transition"
+                className="bg-accent cursor-pointer text-secondary px-6 py-3 text-sm uppercase tracking-wide hover:bg-accent-lt transition"
               >
                 Send Inquiry →
               </button>
