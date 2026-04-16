@@ -7,6 +7,7 @@ const Select = ({ label, name, value, onChange }) => (
       name={name}
       value={value}
       onChange={onChange}
+      required
       className="w-full bg-secondary border border-secondary-dd px-4 py-3 text-sm outline-none focus:border-accent"
     >
       <option value="">Select inquiry type…</option>

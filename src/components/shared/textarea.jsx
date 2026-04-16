@@ -7,6 +7,7 @@ const Textarea = ({ label, placeholder, name, value, onChange }) => (
       rows={5}
       name={name}
       value={value}
+      required
       onChange={onChange}
       placeholder={placeholder}
       className="w-full bg-secondary border border-secondary-dd px-4 py-3 text-sm outline-none focus:border-accent"
