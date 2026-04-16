@@ -170,12 +170,6 @@ export async function POST(req) {
                           Reply to ${clean.fullName}
                         </a>
                       </div>
-
-                      <!-- Timestamp -->
-                      <p style="margin-top:20px; font-size:12px; color:#a3a3a3;">
-                        Received at: ${new Date().toLocaleString()}
-                      </p>
-
                     </td>
                   </tr>
 
