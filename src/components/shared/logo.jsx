@@ -8,6 +8,8 @@ const Logo = () => {
       <Image
         width={40}
         height={40}
+        loading="eager"
+        priority
         src="/images/logo-transparent.svg"
         alt="Nepal Hemp Collective logo"
         className="object-cover scale-300 opacity-80 group-hover:opacity-100 transition round-sm"

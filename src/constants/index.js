@@ -62,16 +62,19 @@ export const steps = [
 export const artisans = [
   {
     name: "Gore Dhami, 72",
+    image: "/images/male.jpg",
     role: "Hemp Harvester · Durgathali Village, Bajhang",
     desc: "Gore has been reading the hillsides of Bajhang since he was a boy, following his father up the same slopes he still walks today. At 72, he is one of the few people left in the district who knows exactly when the wild hemp is ready — not by calendar, but by the way the stalks begin to yellow at the base and the seeds start to harden. He harvests by hand, the same way it has always been done, cutting low and bundling tight. He cannot tell you how many seasons he has done this. He stopped counting.",
   },
   {
     name: "Gauri Jagri, 35",
+    image: "/images/female.jpg",
     role: "Fiber Peeler · Thalara, Bajhang",
     desc: "Gauri learned to peel hemp fiber from her mother-in-law, sitting outside on cold mornings after the retting bundles came up from the river. What looked like simple work to outsiders took her two full seasons to do well — getting the long strands off cleanly without breaking them is a skill that lives in the hands, not the head. Today she is one of the fastest and most consistent processors in her cluster, and she trains newer women who join the collective. The income has let her keep her two children in school in Chainpur through the winter months, which was not possible before.",
   },
   {
     name: "Bharat Mahat, 30",
+    image: "/images/male.jpg",
     role: "Quality Sorter & Collective Coordinator · Bajhang District",
     desc: "Bharat grew up watching his family sell raw hemp at whatever price the local middleman offered, with no way to know if it was fair. After finishing school in Dhangadhi, he came back to Bajhang and joined the collective to help close that gap. He is the link between the harvest teams and the export side — grading fiber lots, maintaining documentation, and making sure what leaves Bajhang can be traced back to the exact village and season it came from. He is learning export logistics as he goes, and he considers that the most important education he has ever had.",
   },

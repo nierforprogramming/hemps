@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const ArtisanCard = ({ item, index }) => {
   return (
@@ -13,8 +12,10 @@ const ArtisanCard = ({ item, index }) => {
         <Image
           width={400}
           height={400}
-          src={`https://picsum.photos/600/400?random=${index + 1}`}
+          src={item.image}
           alt={item.name}
+          loading="eager"
+          priority
           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
         />
       </div>
