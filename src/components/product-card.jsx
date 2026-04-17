@@ -14,6 +14,7 @@ const ProductCard = ({ item }) => {
           <Image
             src={item?.image}
             alt={item.title}
+            sizes="(max-width: 1024px) 0px, 50vw"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />

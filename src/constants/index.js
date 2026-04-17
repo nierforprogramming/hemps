@@ -128,7 +128,6 @@ export const processSteps = [
     tag: "Export Packaging",
     title: "Ready for International Shipment.",
     desc: "Graded fiber is compressed, baled, and sealed for export. We prepare full customs documentation: HS code classification, processing stage declaration, certificate of origin, and phytosanitary certificates where required. Every shipment leaves Bajhang fully documented.",
-    img: "/images/grading.jpg",
   },
 ];
 

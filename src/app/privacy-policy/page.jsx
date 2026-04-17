@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const sections = [
   { id: "intro", title: "Introduction" },
   { id: "definitions", title: "Definitions" },
@@ -14,10 +16,10 @@ const sections = [
 
 const Page = () => {
   return (
-    <div className="bg-base-100 text-base-content">
+    <div className="bg-secondary-dk text-text">
       <div className="max-w-7xl mx-auto px-4 py-10 lg:flex lg:gap-10">
         <aside className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-base-200 p-4 rounded-xl shadow-sm">
+          <div className="bg-muted p-4 rounded-xl shadow-sm">
             <h3 className="font-semibold mb-3">Contents</h3>
             <ul className="space-y-2 text-sm">
               {sections.map((s) => (
@@ -174,10 +176,13 @@ const Page = () => {
             <section id="contact">
               <h2>Contact Us</h2>
               <p>
-                Visit:{" "}
-                <a href="https://nepalhempcollective.com">
+                Visit:
+                <Link
+                  className="underline uppercase tracking-widest"
+                  href="https://nepalhempcollective.com"
+                >
                   nepalhempcollective.com
-                </a>
+                </Link>
               </p>
             </section>
           </div>

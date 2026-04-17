@@ -105,36 +105,41 @@ const Process = () => {
                 </div>
 
                 {/* MOBILE IMAGE */}
-                <div className="relative w-full h-60 mt-6 rounded-md overflow-hidden lg:hidden">
-                  <Image
-                    src={step.img}
-                    alt={step.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-primary/20" />
-                </div>
+                {step?.img && (
+                  <div className="relative w-full h-60 mt-6 rounded-md overflow-hidden lg:hidden">
+                    <Image
+                      src={step.img}
+                      alt={step.title}
+                      sizes="(max-width: 1024px) 0px, 50vw"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-primary/20" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
-
-          {/* RIGHT - IMAGE (DESKTOP ONLY) */}
-          <div className="relative hidden lg:block">
-            <div className="sticky top-32 w-full h-[420px] rounded-lg overflow-hidden">
-              {processSteps.map((step, i) => (
-                <Image
-                  key={i}
-                  src={step.img}
-                  alt={step.title}
-                  fill
-                  className={`object-cover transition-opacity duration-700 ${
-                    active === i ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
-
-              {/* subtle overlay */}
-              <div className="absolute inset-0 bg-primary/20" />
+          <div className="hidden lg:block">
+            <div className="sticky top-32">
+              <div className="relative w-full h-[420px] rounded-lg overflow-hidden">
+                {processSteps.map(
+                  (step, i) =>
+                    step?.img && (
+                      <Image
+                        key={i}
+                        src={step.img}
+                        alt={step.title}
+                        fill
+                        sizes="(max-width: 1024px) 0px, 50vw"
+                        priority={i === 0}
+                        className={`object-cover transition-opacity duration-700 ${
+                          active === i ? "opacity-100" : "opacity-0"
+                        }`}
+                      />
+                    ),
+                )}
+              </div>
             </div>
           </div>
         </div>
