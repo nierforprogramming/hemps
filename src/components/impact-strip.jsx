@@ -10,29 +10,29 @@ const ImpactStrip = () => {
               key={i}
               className="
                 group relative text-center px-6 py-12
-                border-r border-secondary-dk last:border-none
-                bg-secondary hover:bg-secondary-dk
+                border-r border-secondary last:border-none
+                bg-secondary hover:bg-secondary
                 transition-all duration-300
               "
             >
               <span
                 className="
                   absolute bottom-0 left-0 w-full h-[2px]
-                  bg-accent scale-x-0 group-hover:scale-x-100
+                  bg-primary scale-x-0 group-hover:scale-x-100
                   origin-left transition-transform duration-300
                 "
               />
 
               <div
                 data-aos="fade-up"
-                className="text-3xl md:text-4xl font-serif font-semibold text-primary"
+                className="text-3xl md:text-4xl font-serif font-semibold text-dark"
               >
                 {item.value}
               </div>
 
               <div
                 data-aos="fade-up"
-                className="mt-2 text-xs tracking-[0.2em] uppercase text-muted"
+                className="mt-2 text-xs tracking-[0.2em] uppercase text-text"
               >
                 {item.label}
               </div>

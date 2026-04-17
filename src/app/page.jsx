@@ -19,15 +19,15 @@ const Home = () => {
         {/* CONTENT */}
         <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-20 pt-28 lg:pt-32 pb-16">
           <div className="max-w-xl space-y-6">
-            <div className="flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-accent-lt">
+            <div className="flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-accent">
               <span className="w-6 h-[1px] bg-accent"></span>
               Bajhang District, Far-Western Nepal
             </div>
 
             <h1 className="font-serif italic text-5xl lg:text-6xl leading-[1.1]">
               <span className="block text-secondary/90">Himalayan Hemp,</span>
-              <span className="block text-accent-lt">Harvested by</span>
-              <span className="block text-accent-lt">Hand.</span>
+              <span className="block text-accent">Harvested by</span>
+              <span className="block text-accent">Hand.</span>
             </h1>
 
             <p className="text-secondary/70 text-md leading-relaxed tracking-wide max-w-md">

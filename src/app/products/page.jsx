@@ -33,23 +33,19 @@ const Products = () => {
         </div>
       </section>
 
-      <section
-        data-aos="fade-up"
-        data-aos-delay="200"
-        className="bg-secondary text-text"
-      >
+      <section className="bg-secondary-dk">
         <div className="max-w-6xl mx-auto px-6 py-20 lg:py-28">
           {/* HEADER */}
           <div data-aos="fade-up" className="text-center mb-14 space-y-4">
-            <div className="text-xs tracking-[0.3em] uppercase text-accent/80">
+            <div className="text-xs tracking-[0.3em] uppercase text-primary-dark bg-primary-glow w-fit mx-auto px-4 py-2">
               Our Fiber Offerings
             </div>
 
-            <h2 className="font-serif text-3xl md:text-4xl text-primary">
+            <h2 className="font-serif text-3xl md:text-4xl text-dark">
               What We Supply
             </h2>
 
-            <p className="text-muted max-w-xl mx-auto">
+            <p className="text-text max-w-xl mx-auto">
               All fiber is semi-processed and raw. We are transparent about this
               in every shipment, every invoice, every customs form.
             </p>
@@ -67,7 +63,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* LEFT SIDE */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <div className="text-xs tracking-[0.3em] uppercase text-accent/80 mb-6">
+            <div className="text-xs tracking-[0.3em] uppercase text-primary-dark bg-primary-glow w-fit px-4 py-2 mb-6">
               Why Source From Us
             </div>
 
@@ -84,10 +80,10 @@ const Products = () => {
 
                   {/* Text */}
                   <div>
-                    <h3 className="font-sans text-lg text-primary mb-2">
+                    <h3 className="font-sans text-lg text-dark mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-muted text-sm leading-relaxed max-w-md">
+                    <p className="text-text text-sm leading-relaxed max-w-md">
                       {item.desc}
                     </p>
                   </div>
@@ -102,23 +98,23 @@ const Products = () => {
             data-aos-delay="400"
             className="flex items-center"
           >
-            <div className="bg-primary border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
+            <div className="bg-secondary-dk border border-primary/10 rounded-md p-8 lg:p-10 relative w-full">
               {/* Accent border */}
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent rounded-l-md" />
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-primary rounded-l-md" />
 
               {/* Label */}
-              <div className="text-xs tracking-[0.25em] uppercase text-accent mb-4">
+              <div className="text-xs tracking-[0.25em] uppercase text-dark mb-4">
                 Processing Disclosure
               </div>
 
               {/* Quote */}
-              <blockquote className="font-serif italic text-white text-lg leading-relaxed mb-6">
+              <blockquote className="font-serif italic text-dark text-lg leading-relaxed mb-6">
                 &ldquo;Our fiber is semi-processed and raw. We are transparent
                 about this — always.&rdquo;
               </blockquote>
 
               {/* Description */}
-              <p className="text-secondary text-sm leading-relaxed mb-6">
+              <p className="text-text text-sm leading-relaxed mb-6">
                 Water-retted and sun-dried. Not degummed, not bleached, not
                 chemically softened. Your downstream team performs further
                 refinement. We supply the clean, traceable upstream.
@@ -127,7 +123,7 @@ const Products = () => {
               {/* Button */}
               <Link
                 href="/process"
-                className="btn btn-outline tracking-wide uppercase border-secondary/40 text-secondary hover:bg-accent hover:text-secondary"
+                className="btn btn-ghost border-none outline-none shadow-none bg-accent-lt tracking-wide uppercase text-secondary hover:bg-accent"
               >
                 Full Process Details →
               </Link>
@@ -141,7 +137,7 @@ const Products = () => {
           data-aos-delay="400"
           className="max-w-4xl mx-auto px-6"
         >
-          <div className="relative border border-primary/10 bg-primary rounded-sm text-center px-6 py-12 lg:py-14">
+          <div className="relative  bg-linear-to-l from-primary to-primary-lt rounded-sm text-center px-6 py-12 lg:py-14">
             {/* Top accent line */}
             <div className="absolute top-0 left-0 w-full h-[2px] bg-accent" />
 

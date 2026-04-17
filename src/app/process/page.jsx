@@ -71,32 +71,33 @@ const Process = () => {
           </p>
         </div>
       </section>
-      <section className="bg-secondary text-text relative">
+
+      <section className="bg-secondary-dk relative">
         <div className="max-w-6xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-16">
           {/* LEFT - TEXT */}
           <div>
             {processSteps.map((step, i) => (
               <div key={i} className="py-10 border-b border-secondary-dd">
                 <div className="flex gap-6 md:gap-10">
-                  <div className="font-serif text-4xl text-accent/30 min-w-[60px]">
+                  <div className="font-serif text-4xl text-accent min-w-[60px]">
                     {step.num}
                   </div>
 
                   <div className="space-y-3">
-                    <div className="inline-block text-[10px] tracking-[0.25em] uppercase bg-accent-lt text-accent-content px-3 py-1 rounded">
+                    <div className="inline-block text-[10px] tracking-[0.25em] uppercase bg-primary-glow text-primary-dark font-semibold px-3 py-1 rounded">
                       {step.tag}
                     </div>
 
                     <h3
                       ref={(el) => (refs.current[i] = el)}
-                      className="font-serif font-semibold text-lg text-primary"
+                      className="font-serif font-semibold text-lg text-dark"
                     >
                       {step.title}
                     </h3>
 
                     <p
                       ref={(el) => (refs.current[i] = el)}
-                      className="text-muted text-sm leading-relaxed"
+                      className="text-text text-sm leading-relaxed"
                     >
                       {step.desc}
                     </p>
@@ -139,15 +140,15 @@ const Process = () => {
         </div>
       </section>
 
-      <section className="bg-secondary text-text">
+      <section className="bg-secondary-dk text-text">
         <div className="max-w-2xl mx-auto px-6 pb-20">
           {/* BOX */}
           <div
             data-aos="fade-up"
-            className="bg-primary text-secondary rounded-sm px-6 md:px-10 py-8 md:py-10 relative overflow-hidden"
+            className="bg-secondary text-text rounded-sm px-6 md:px-10 py-8 md:py-10 relative overflow-hidden"
           >
             {/* LEFT ACCENT LINE */}
-            <div className="absolute left-0 top-0 h-full w-[4px] bg-accent" />
+            <div className="absolute left-0 top-0 h-full w-[4px] bg-primary" />
 
             <div className="space-y-5 max-w-3xl">
               {/* TITLE */}
@@ -161,19 +162,17 @@ const Process = () => {
               </div>
 
               {/* CONTENT */}
-              <p className="text-secondary/80 leading-relaxed text-sm md:text-base">
+              <p className="text-text leading-relaxed text-sm md:text-base">
                 Our fiber leaves Nepal water-retted and sun-dried. The bark has
                 been separated from the woody core, but the fiber has not been
                 further refined: no degumming, no bleaching, no chemical
                 softening, no spinning preparation. We classify our output as{" "}
-                <strong className="text-secondary">
-                  semi-processed raw fiber
-                </strong>{" "}
+                <strong className="text-dark">semi-processed raw fiber</strong>{" "}
                 in all customs documentation.
               </p>
 
-              <p className="text-secondary/80 leading-relaxed text-sm md:text-base">
-                <strong className="text-secondary">For buyers:</strong> Your
+              <p className="text-text leading-relaxed text-sm md:text-base">
+                <strong className="text-dark">For buyers:</strong> Your
                 downstream processing team will need to perform further
                 refinement steps — such as degumming, carding, or combing —
                 before spinning or weaving. We can provide technical data sheets
@@ -181,10 +180,8 @@ const Process = () => {
                 team.
               </p>
 
-              <p className="text-secondary/80 leading-relaxed text-sm md:text-base">
-                <strong className="text-secondary">
-                  Why this is an advantage:
-                </strong>{" "}
+              <p className="text-text leading-relaxed text-sm md:text-base">
+                <strong className="text-dark">Why this is an advantage:</strong>{" "}
                 The absence of industrial chemical processing is precisely what
                 makes our fiber valuable for brands with clean upstream supply
                 chain commitments. You receive fiber in its most traceable,
@@ -200,7 +197,7 @@ const Process = () => {
             data-aos-delay="150"
             className="text-center mt-12 space-y-6"
           >
-            <p className="text-muted text-sm">
+            <p className="text-text text-sm">
               Questions about processing stage or downstream compatibility?
             </p>
 

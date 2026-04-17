@@ -4,26 +4,30 @@
 
 @theme {
   /*  Primary (KEEP)  */
-  --color-primary: #1b3820;
-  --color-primary-md: #2c5438;
-  --color-primary-lt: #3e7250;
+  --color-primary: #1a4e3a;
+  --color-primary-dark: #1a4e3a;
+  --color-primary-lt: #2f7658;
+  --color-primary-glow: rgba(47, 118, 88, 0.18);
 
-  --color-secondary: #f1f5f9; /* light slate */
-  --color-secondary-dk: #e2e8f0;
+  --color-secondary: #ffffff;
+  --color-secondary-dk: #f3efe6;
   --color-secondary-dd: #cbd5e1;
 
   /*  Accent (PREMIUM GOLD)  */
-  --color-accent: #d4af37;
-  --color-accent-lt: #e6c766;
+  --color-accent: #e6c766;
+  --color-accent-lt: #d4af37;
 
   /*  Text (HIGH CONTRAST)  */
   --color-text: #0a0a0a;
-  --color-muted: #525252;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-dark: #1a2b23;
   --color-faint: #a3a3a3;
 
   /* Fonts */
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
+
+  --color-cream: #e2dacc;
 }
 
 @plugin "daisyui" {
@@ -35,15 +39,24 @@
 @plugin "daisyui/theme" {
   name: "nepalhemp";
 
-  --color-primary: #1b3820;
-  --color-primary-md: #2c5438;
-  --color-primary-lt: #3e7250;
+  --color-primary: #1a4e3a;
+  --color-primary-dark: #1a4e3a;
+  --color-primary-lt: #2f7658;
+  --color-primary-glow: rgba(47, 118, 88, 0.18);
 
-  --color-secondary: #f1f5f9; /* light slate */
-  --color-secondary-dk: #e2e8f0;
+  --color-secondary: #ffffff; /* light slate */
+  --color-secondary-dk: #f3efe6;
   --color-secondary-dd: #cbd5e1;
 
   /*  Accent (PREMIUM GOLD)  */
-  --color-accent: #d4af37;
-  --color-accent-lt: #e6c766;
+  --color-accent: #e6c766;
+  --color-accent-lt: #d4af37;
+
+  /*  Text (HIGH CONTRAST)  */
+  --color-text: #5e665f;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-dark: #1a2b23;
+  --color-faint: #a3a3a3;
+
+  --color-cream: #e2dacc;
 }

@@ -21,13 +21,13 @@ const ArtisanCard = ({ item, index }) => {
 
       {/* Content */}
       <div className="p-6 space-y-3">
-        <div className="font-serif text-lg text-primary">{item.name}</div>
+        <div className="font-serif text-lg text-dark">{item.name}</div>
 
         <div className="text-[10px] tracking-[0.25em] uppercase text-accent">
           {item.role}
         </div>
 
-        <p className="text-sm text-muted leading-relaxed">{item.desc}</p>
+        <p className="text-sm text-text leading-relaxed">{item.desc}</p>
       </div>
     </div>
   );

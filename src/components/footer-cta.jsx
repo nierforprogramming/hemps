@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FooterCTA = () => {
   return (
-    <section className="bg-primary text-secondary">
+    <section className="bg-linear-to-l from-primary to-primary-lt text-secondary">
       <div
         data-aos="fade-up"
         data-aos-delay="400"

@@ -5,7 +5,7 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-black/90 text-secondary border-t border-secondary/10">
+    <footer className="bg-primary text-secondary border-t border-secondary/10">
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-20">
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -15,14 +15,14 @@ const Footer = () => {
               <Logo />
             </div>
 
-            <p className="text-secondary/60 text-sm leading-relaxed max-w-xs">
+            <p className="text-muted text-sm leading-relaxed max-w-xs">
               Wild Himalayan hemp fiber. Hand-processed. Fully traceable.
               Bajhang district, Far-Western Nepal.
             </p>
           </div>
 
           {/* NAVIGATE */}
-          <div>
+          <div className="text-muted">
             <h4 className="text-xs tracking-[0.25em] uppercase text-secondary/50 mb-4">
               Navigate
             </h4>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           {/* PRODUCTS */}
-          <div>
+          <div className="text-muted">
             <h4 className="text-xs tracking-[0.25em] uppercase text-secondary/50 mb-4">
               Products
             </h4>
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
 
           {/* CONTACT */}
-          <div>
+          <div className="text-muted">
             <h4 className="text-xs tracking-[0.25em] uppercase text-secondary/50 mb-4">
               Contact
             </h4>

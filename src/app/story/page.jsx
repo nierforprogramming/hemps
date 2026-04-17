@@ -55,7 +55,7 @@ const Story = () => {
               Our Story
             </h2>
 
-            <div className="space-y-2">
+            <div className="space-y-2 text-dark">
               <h3
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -66,7 +66,7 @@ const Story = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="text-muted leading-relaxed"
+                className="text-text leading-relaxed"
               >
                 At Nepal Hemps Collective, we know that true sustainability
                 cannot be manufactured in a laboratory. It has to be grown,
@@ -86,7 +86,7 @@ const Story = () => {
               </p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 text-dark">
               <h3
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -97,7 +97,7 @@ const Story = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="text-muted leading-relaxed"
+                className="text-text leading-relaxed"
               >
                 While the modern textile industry relies on heavy machinery and
                 harsh chemicals to extract fibers quickly, we rely on time,
@@ -119,7 +119,7 @@ const Story = () => {
               </p>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 text-dark">
               <h3
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -130,7 +130,7 @@ const Story = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="text-muted leading-relaxed"
+                className="text-text leading-relaxed"
               >
                 We are not simply a broker or a factory. Nepal Hemps Collective
                 is a highly structured network of over 200 artisan families and
@@ -156,15 +156,15 @@ const Story = () => {
       <section className="bg-secondary-dk text-text">
         <div className="max-w-6xl mx-auto px-6 py-20 lg:py-28">
           <div data-aos="fade-up" className="text-center mb-14 space-y-4">
-            <div className="text-xs tracking-[0.3em] uppercase text-accent/80">
+            <div className="text-xs w-fit mx-auto px-4 py-2 rounded-sm tracking-[0.3em] uppercase text-primary bg-primary-glow">
               The People
             </div>
 
-            <h2 className="font-serif text-3xl md:text-4xl text-primary">
+            <h2 className="font-serif text-3xl md:text-4xl text-dark">
               Meet the Collective
             </h2>
 
-            <p className="text-muted max-w-xl mx-auto">
+            <p className="text-text max-w-xl mx-auto">
               Every fiber we supply is touched by real hands. Here are some of
               the artisans and farmers at the heart of what we do.
             </p>
@@ -177,7 +177,7 @@ const Story = () => {
           </div>
         </div>
       </section>
-      <section className="bg-primary text-secondary">
+      <section className="bg-linear-to-l from-primary to-primary-lt text-secondary">
         <div
           data-aos="fade-up"
           data-aos-delay="400"

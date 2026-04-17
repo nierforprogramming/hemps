@@ -1,5 +1,4 @@
 import { value } from "@/constants";
-import React from "react";
 
 const ValueProps = () => {
   return (
@@ -19,19 +18,19 @@ const ValueProps = () => {
             <span
               className="
                 absolute top-0 left-0 w-full h-[2px]
-                bg-accent scale-x-0 group-hover:scale-x-100
+                bg-primary scale-x-0 group-hover:scale-x-100
                 origin-left transition-transform duration-300
               "
             />
 
             <div className="text-accent mb-6">{item.icon}</div>
 
-            <h3 className="font-serif font-bold tracking-wide text-xl text-primary mb-4">
+            <h3 className="font-serif font-bold tracking-wide text-xl text-dark mb-4">
               {item.title}
             </h3>
 
             {/* DESCRIPTION */}
-            <p className="text-muted/70 leading-relaxed text-md">{item.desc}</p>
+            <p className="text-text leading-relaxed text-md">{item.desc}</p>
           </div>
         ))}
       </div>

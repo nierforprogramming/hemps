@@ -5,7 +5,7 @@ const ProductCard = ({ item }) => {
   return (
     <div
       data-aos="fade-up"
-      className="group flex flex-col h-full border border-secondary-dk rounded-md overflow-hidden bg-base-100 transition hover:-translate-y-1 hover:shadow-lg"
+      className="group flex flex-col h-full cursor-pointer border border-secondary-dk rounded-md overflow-hidden bg-secondary transition hover:-translate-y-1 hover:shadow-lg"
     >
       {/* IMAGE */}
 
@@ -33,20 +33,20 @@ const ProductCard = ({ item }) => {
         </div>
 
         {/* TITLE */}
-        <h3 className="font-serif text-xl text-primary mb-1 leading-tight">
+        <h3 className="font-serif text-xl text-dark mb-1 leading-tight">
           {item.title}
         </h3>
 
         {/* SUBTITLE */}
         {item.subtitle && (
-          <p className="text-xs text-muted italic mb-3">{item.subtitle}</p>
+          <p className="text-xs text-text italic mb-3">{item.subtitle}</p>
         )}
 
         {/* DESCRIPTION */}
-        <p className="text-sm text-muted leading-relaxed mb-4">{item.desc}</p>
+        <p className="text-sm text-text leading-relaxed mb-4">{item.desc}</p>
 
         {/* USE CASES */}
-        <p className="text-sm text-muted leading-relaxed mb-6">
+        <p className="text-sm text-text leading-relaxed mb-6">
           <span className="text-text font-medium">Use cases:</span>{" "}
           {item.useCases}
         </p>
@@ -58,7 +58,7 @@ const ProductCard = ({ item }) => {
         <div className="grid grid-cols-2 gap-3 mt-auto">
           {item.meta.map((m, i) => (
             <div key={i}>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-muted">
+              <div className="text-[10px] uppercase tracking-[0.2em] text-text">
                 {m.label}
               </div>
               <div className="text-sm text-text">{m.value}</div>

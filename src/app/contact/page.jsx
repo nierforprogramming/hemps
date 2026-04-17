@@ -83,15 +83,18 @@ export default function Contact() {
           </p>
         </div>
       </section>
-      <section className="bg-secondary text-text">
+
+      <section className="bg-secondary-dk">
         <div className="max-w-4xl mx-auto px-6 py-20 lg:py-10">
           <div
             data-aos="fade-up"
             data-aos-delay="300"
-            className="bg-accent/10 border border-secondary-dd p-5 rounded-md mb-16"
+            className="bg-secondary p-5 rounded-md mb-16"
           >
-            <p className="text-sm text-muted leading-relaxed">
-              <span className="font-semibold text-primary">Response time:</span>{" "}
+            <p className="text-sm text-text leading-relaxed">
+              <span className="font-semibold bg-primary-glow text-primary px-2 rounded-sm">
+                Response time:
+              </span>
               We aim to respond within 2 business days. For urgent export
               deadlines, include <span className="italic">URGENT</span> in your
               subject line. The more detail you provide upfront — quantity,
@@ -102,20 +105,15 @@ export default function Contact() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-accent/10 border border-secondary-dd rounded-md p-6 lg:p-10 mb-20"
+            className="bg-secondary rounded-md p-6 lg:p-10 mb-20"
           >
-            <p className="text-xs tracking-[0.25em] uppercase text-accent mb-2">
+            <p className="text-xs tracking-[0.25em] uppercase text-accent-lt mb-2">
               Send an Inquiry
             </p>
 
-            <h2 className="font-serif text-3xl md:text-4xl text-primary mb-3">
+            <h2 className="font-serif text-3xl md:text-4xl text-dark mb-3">
               Get in Touch
             </h2>
-
-            <p className="text-muted mb-8 max-w-2xl">
-              Not sure which email to use? Fill in the form and we will make
-              sure it reaches the right person within 2 business days.
-            </p>
 
             <div className="grid md:grid-cols-2 gap-6">
               <Input
@@ -182,7 +180,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mt-8 gap-4">
-              <p className="text-xs text-muted">
+              <p className="text-xs text-text">
                 * Required fields. We never share your details with third
                 parties.
               </p>
@@ -222,7 +220,7 @@ export default function Contact() {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="mt-6 text-xs tracking-[0.15em] uppercase text-muted"
+              className="mt-6 text-xs tracking-[0.15em] uppercase text-dark"
             >
               — The Nepal Hemp Collective Team
             </p>
@@ -230,7 +228,7 @@ export default function Contact() {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="mt-2 text-[11px] tracking-[0.1em] uppercase text-muted/70"
+              className="mt-2 text-[11px] tracking-[0.1em] uppercase text-text"
             >
               Bajhang District, Far-Western Nepal
             </p>

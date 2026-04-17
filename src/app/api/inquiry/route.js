@@ -97,8 +97,8 @@ export async function POST(req) {
 
                   <!-- Header -->
                   <tr>
-                    <td style="background:#1b3820; padding:20px;">
-                      <h2 style="margin:0; color:#d4af37; font-size:18px;">
+                    <td style="background:#1a4e3a; padding:20px;">
+                      <h2 style="margin:0; color:#e6c766; font-size:18px;">
                         New Inquiry Received
                       </h2>
                     </td>
@@ -124,7 +124,7 @@ export async function POST(req) {
                         <tr>
                           <td style="padding:8px 0; color:#525252;"><strong>Email</strong></td>
                           <td style="padding:8px 0;">
-                            <a href="mailto:${clean.email}" style="color:#1b3820; text-decoration:none;">
+                            <a href="mailto:${clean.email}" style="color:#1a4e3a; text-decoration:none;">
                               ${clean.email}
                             </a>
                           </td>
@@ -158,7 +158,7 @@ export async function POST(req) {
                           <strong>Message</strong>
                         </p>
 
-                        <div style="background:#f1f5f9; padding:16px; border-left:4px solid #d4af37; border-radius:6px; font-size:14px; color:#0a0a0a; line-height:1.6;">
+                        <div style="background:#f1f5f9; padding:16px; border-left:4px solid #e6c766; border-radius:6px; font-size:14px; color:#0a0a0a; line-height:1.6;">
                           ${clean.message}
                         </div>
                       </div>
@@ -166,7 +166,7 @@ export async function POST(req) {
                       <!-- Button -->
                       <div style="margin-top:24px;">
                         <a href="mailto:${clean.email}"
-                           style="display:inline-block; padding:10px 18px; background:#1b3820; color:#ffffff; text-decoration:none; font-size:13px; border-radius:6px;">
+                           style="display:inline-block; padding:10px 18px; background:#1a4e3a; color:#ffffff; text-decoration:none; font-size:13px; border-radius:6px;">
                           Reply to ${clean.fullName}
                         </a>
                       </div>
@@ -217,8 +217,8 @@ export async function POST(req) {
             
             <!-- Header -->
             <tr>
-              <td style="background:#1b3820; padding:24px; text-align:center;">
-                <h1 style="margin:0; color:#d4af37; font-size:20px; letter-spacing:1px;">
+              <td style="background:#1a4e3a; padding:24px; text-align:center;">
+                <h1 style="margin:0; color:#e6c766; font-size:20px; letter-spacing:1px;">
                   Nepal Hemp Collective
                 </h1>
               </td>
@@ -239,7 +239,7 @@ export async function POST(req) {
                 <!-- Highlight Box -->
                 <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
                   <tr>
-                    <td style="background:#f1f5f9; padding:16px; border-left:4px solid #d4af37;">
+                    <td style="background:#f1f5f9; padding:16px; border-left:4px solid #e6c766;">
                       <p style="margin:0; font-size:13px; color:#525252;">
                         ⏱ <strong>Response time:</strong> Within 2 business days  
                         <br/>
