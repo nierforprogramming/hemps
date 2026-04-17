@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-primary text-secondary">
-      <div className="navbar shadow-sm">
+      <div className="navbar shadow-sm px-5 py-4">
         <div className="navbar-start">
           <Logo />
         </div>
