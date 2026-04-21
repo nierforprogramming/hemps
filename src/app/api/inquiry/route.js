@@ -202,9 +202,9 @@ export async function POST(req) {
       },
     });
 
-    transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
 
-    transporter.sendMail({
+    await transporter.sendMail({
       to: clean.email,
       from: process.env.EMAIL_HOST_USER,
       subject: "We received your inquiry",
