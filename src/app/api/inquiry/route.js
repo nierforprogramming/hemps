@@ -71,8 +71,8 @@ export async function POST(req) {
     };
 
     const mailOptions = {
-      from: `"Website Inquiry" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
+      from: `"Website Inquiry" <${process.env.EMAIL_HOST_USER}>`,
+      to: process.env.EMAIL_HOST_USER,
       replyTo: clean.email,
       subject: `New Inquiry from ${clean.fullName}`,
       html: `
@@ -196,14 +196,17 @@ export async function POST(req) {
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
-      auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
+      auth: {
+        user: process.env.EMAIL_HOST_USER,
+        pass: process.env.EMAIL_HOST_PASSWORD,
+      },
     });
 
     transporter.sendMail(mailOptions);
 
     transporter.sendMail({
       to: clean.email,
-      from: process.env.EMAIL_USER,
+      from: process.env.EMAIL_HOST_USER,
       subject: "We received your inquiry",
       html: `
   <div style="margin:0; padding:0; background-color:#f1f5f9; font-family: Arial, sans-serif;">

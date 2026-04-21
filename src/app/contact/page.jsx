@@ -58,7 +58,7 @@ export default function Contact() {
   return (
     <>
       <section className="bg-primary text-secondary relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary" />
+        <div className="absolute inset-0 bg-linear-to-r from-primary via-primary/90 to-primary" />
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 lg:py-32">
           <h1
@@ -228,7 +228,7 @@ export default function Contact() {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="mt-2 text-[11px] tracking-[0.1em] uppercase text-text"
+              className="mt-2 text-[11px] tracking-widest uppercase text-muted/70"
             >
               Bajhang District, Far-Western Nepal
             </p>

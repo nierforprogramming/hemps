@@ -9,7 +9,7 @@ const ArtisanCard = ({ item, index }) => {
     >
       {/* Image */}
       <div className="aspect-[16/10] overflow-hidden bg-primary">
-        <Image
+        {/* <Image
           width={400}
           height={400}
           src={item.image}
@@ -17,7 +17,7 @@ const ArtisanCard = ({ item, index }) => {
           loading="eager"
           priority
           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
-        />
+        /> */}
       </div>
 
       {/* Content */}

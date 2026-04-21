@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  console.log(open);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-primary text-secondary">
